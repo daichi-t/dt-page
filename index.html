@@ -1,4 +1,56 @@
-<!DOCTYPE html>
-<html>
-  <h1>Three-A Inc. へようこそ</h1>
-</html>
+<apex:page >
+
+<style>
+*:not(h2):not(img) {
+    box-sizing: border-box;
+}
+
+.td .w50 {
+    width: 50px;
+    min-width: 50px;
+}
+
+.td .w250 {
+    width: 250px;
+    min-width: 250px;
+}
+</style>
+
+    <apex:form >
+        <h1>ホームページ</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Three-A-Incへようこそ</td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:image url="{!$Resource.girl1}" width="100" height="100"/>
+                        <apex:image url="{!$Resource.girl2}" width="100" height="100"/>
+                        <apex:image url="{!$Resource.girl3}" width="100" height="100"/>
+                        <apex:image url="{!$Resource.girl4}" width="100" height="100"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1px">
+            <tbody>
+                <tr>
+                    <span>会社概要</span>
+                </tr>
+                <tr>
+                    <td class="w50">会社名</td>
+                    <td class="w250">株　スリーエー</td>
+                </tr>
+                <tr>
+                    <td class="w50">住所</td>
+                    <td class="w250">新宿</td>
+                </tr>
+                <tr>
+                    <td class="w50">TEL</td>
+                    <td class="w250">01-2345-6789</td>
+                </tr>
+            </tbody>
+        </table>
+    </apex:form>
+</apex:page>
